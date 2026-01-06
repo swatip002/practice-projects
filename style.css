@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'helvetica';
+    src: url('HelveticaNeueRoman.otf');
+    font-weight:100;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 html,body{
     height: 100%;
@@ -10,11 +17,88 @@ html,body{
 main{
     height: 100%;
     width: 100%;
-    background-color: black;
-    cursor: none;
+    background-color:#0B4F33 ;
+    background: linear-gradient(160deg,rgba(11, 79, 51, 1) 0%, rgba(0, 10, 4, 1) 100%, rgba(11, 79, 51, 1) 100%);
 }
-#cursor{
-    height: 50px;
-    position: fixed;
-    transform: translate(-50% ,-50%);
+nav #sec2{
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+    font-weight: 200;
+}
+nav{
+    
+    padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+    
+ .but1{
+    background-color: #29a270;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.but2{
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+section h1{
+    font-size: 80px;
+    font-weight: 300;
+}
+section{
+    display: flex;
+    padding: 30px 40px;
+    height: 70%;
+}
+section #sec1{
+    width: 70%;
+    padding: 10px;
+}
+section #sec1 #subSec1{
+    display: flex;
+    gap: 30px;
+}
+section #sec1 #subSec1 p{
+    margin-top: 10px;
+}
+img{
+    position: absolute;
+    left: 30%;
+    bottom: 12%;
+    height: 400px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+section #sec2{
+    width: 40%;
+    margin-top: 40px;
+    font-weight: 100;
+    opacity: 0.7;
+    
+}
+section #sec3{
+    display: flex;
+    gap:30px;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+footer{
+    height: 22%;
+    background-color: rgb(139, 138, 138);
+    display: flex;
+    align-items: flex-end;
+    padding:20px;
+    justify-content: space-around;
+    font-size: 30px;
 }
